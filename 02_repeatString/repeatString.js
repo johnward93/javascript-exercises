@@ -1,5 +1,8 @@
 const repeatString = function(string, num) {
-    let stringHolder = ""
+    let stringHolder = "";
+    if (num < 0){
+        return "ERROR"
+    }
     for (i = 0; i < num; i++) {
         stringHolder = stringHolder.concat(string);
     };
